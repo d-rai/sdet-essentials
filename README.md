@@ -1,90 +1,43 @@
-# SDET Essentials – Automation Framework
+# SDET Essentials
 
 ## Overview
-This project is a comprehensive **SDET learning and automation framework**
-covering UI, API, BDD, CI/CD, Docker, and core Java concepts.
+This repository documents my **SDET learning journey** using Java and Gradle.
+It is structured as a **multi-module project** to clearly separate
+Java fundamentals from automation framework development.
 
-## Tech Stack
-- Language: Java 8+
-- Build Tool: Gradle
-- UI Automation: Playwright (Java)
-- API Automation: REST Assured
-- BDD: Cucumber
-- Test Runner: TestNG
-- Reporting: Extent Reports, Allure
-- Logging: Log4j2
-- CI/CD: GitHub Actions
-- Containerization: Docker
+## Modules
 
-## Project Structure
-(com.sdet.essentials)
-core -> driver, config, utils
-ui -> pages, flows
-api -> clients, validators
-reporting -> reports
-patterns -> design patterns
-
-
-## Design Principles
-- Page Object Model
-- Factory & Singleton patterns
-- Clean separation of concerns
-- API-first testing approach
-
-## How to Run Tests
-```bash
-./gradlew test
-
-CI/CD
-
-Tests run automatically on push
-
-Reports generated as artifacts
-
-```
-Author
-
-Durgesh Kumar – SDET Journey
-
-
----
-
-# ✅ PART 3: INTERVIEW MAPPING (MODULE → QUESTIONS)
-
-## 🔹 Core Java
-- Explain OOP
+### 1️⃣ java-essentials
+Covers core Java concepts required for an SDET role:
+- Java basics
+- OOP
+- Collections
 - Java 8 features
 - Exception handling
-- Multithreading in automation
+- Multithreading
 
-## 🔹 UI Automation
-- Why Playwright?
-- POM advantages
-- Handling waits & flaky tests
+### 2️⃣ automation-framework
+(Work in progress)
+Will cover:
+- UI automation (Playwright)
+- API automation (REST Assured)
+- BDD (Cucumber)
+- Reporting & logging
+- CI/CD and Docker
 
-## 🔹 API Automation
-- Why API tests?
-- Serialization vs Deserialization
-- Auth handling
+## Tech Stack (Planned)
+- Java 8+
+- Gradle
+- Playwright (Java)
+- REST Assured
+- TestNG
+- Cucumber
+- GitHub Actions
+- Docker
 
-## 🔹 Framework Design
-- Explain architecture
-- How configs are managed
-- Parallel execution strategy
+## Current Status
+✅ Project structure created  
+🚧 Java essentials learning in progress
 
-## 🔹 BDD
-- Pros & cons of Cucumber
-- Hooks usage
-- Tagging strategy
-
-## 🔹 CI/CD
-- Explain your pipeline
-- How failures are handled
-- Report publishing
-
-## 🔹 Docker
-- Why Docker for tests?
-- Headless execution
-- CI integration
-
----
+## Author
+Durgesh Kumar – SDET Journey
