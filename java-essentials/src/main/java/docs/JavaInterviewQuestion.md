@@ -42,7 +42,7 @@ String name = "Durgesh";
 
 Stack                      Heap
 -----                      -----
-name  ───────────────▶    "Durgesh"
+name  --------------->    "Durgesh"
 count = 10
 
 ```
@@ -57,4 +57,46 @@ Java is memory-safe because it prevents direct memory access and manages memory 
 
 ```
 Java is strictly pass-by-value. It does NOT support pass-by-reference.
+```
+
+### 8. Why static method cannot access non-static variables?
+
+```
+Because static methods belong to the class and do not have access to instance-specific data without an object.
+```
+
+### 9. What final really means?
+
+```
+final means cannot be changed after assignment.
+
+final int x = 10;
+x = 20; //  compile error
+
+final List<String> list = new ArrayList<>();
+list.add("A");     // allowed
+list = new ArrayList<>(); // not allowed
+```
+
+### 10. Can we modify final object?
+
+```
+Yes, if the object is mutable. Final only prevents reassignment. (final protects the reference, not the object.)
+final List<String> names = new ArrayList<>();
+names.add("Durgesh");   // allowed
+names.add("Amit");     //  allowed
+
+names = new ArrayList<>(); // not-allowed(Reference reassignment is blocked by final) compile-time error
+
+
+Stack                     Heap
+-----                     -----
+names -------------->    ArrayList object
+                                  |
+                           elementData (Object[])
+                                |
+                                |-- [0] -----> "Durgesh"
+                                |-- [1] -----> "Amit"
+
+
 ```
